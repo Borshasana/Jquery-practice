@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--CSS links -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/media.css">
+
+    <title>JQuery</title>
+  </head>
+  <body>
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+         <h1 class="h1_first">Home Task for jQuery function</h1>
+         <p id="p1"> 1.This is an alert Message By using alert function</p>
+         <button type="button" class=" btn btn-danger btn1"> Click Here</button><br> <br>
+         <button type="button" class=" btn btn-primary" id="btn2">Click Me for Hide</button>
+         <button type="button" class=" btn btn-info" id="btn3">Click Me for show</button>
+         <button type="button" class=" btn btn-success" id="btn4">Toggle</button>
+         <h2 id="btn2_h2"> This text will be hide.</h2>
+         <button type="button" class=" btn btn-success" id="btn5">FADE Out</button>
+         <button type="button" class=" btn btn-success" id="btn6">FADE In</button>
+        <button type="button" class=" btn btn-success" id="btn7">FADE Toggle</button>
+        <button type="button" class=" btn btn-success" id="btn8">FADE To</button><br><br>
+         <h2 id="btn3_h2"> This text will be fade</h2>
+       </div>
+     </div>
+   </div>
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+         <div class="slide_sec">
+          <div class="top">
+            <h1>This is slide part</h1>
+          </div>
+          <div class="box">
+            <p>Lorem, ipsum dolor sit amet.</p><br><br>
+          </div>
+           
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12  anim_d">
+         <button type="button" class=" btn btn-success" id="btn9">Start Animation</button>
+         <p id="anim_p"> I am a web developer.</p>
+         <button type="button" class=" btn btn-success" id="btn10">Start Animation</button>
+         <p id="big_p"> This text will be animated.</p>
+         <button id="stop">Stop sliding</button>
+
+         <div id="flip">Click to slide down panel</div>
+         <div id="panel">Hello! I am a developer.</div>
+         
+          
+       </div>
+     </div>
+   </div>
+    <!--JS links -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      $(document).ready(function(){
+        // alert
+        $("#p1").click(function(){
+          alert("The Paragraph was clicked");
+        });
+        // alert
+        $('.btn1').click(function(){
+             alert("Hello SSB");
+        });
+      // hide
+      $("#btn2").click(function(){
+        $('#btn2_h2').hide();
+
+      });
+        // show
+      $("#btn3").click(function(){
+        $('#btn2_h2').show();
+
+      });
+   // toggle
+      $("#btn4").mouseover(function(){
+        $('#btn2_h2').toggle();
+
+      });
+      // fade out
+      $("#btn5").click(function(){
+        $('#btn3_h2'). fadeOut(2000);
+
+      });
+      // fade out
+      $("#btn6").click(function(){
+        $('#btn3_h2'). fadeIn(2000);
+
+      });
+       // fade toggle
+      $("#btn7").click(function(){
+        $('#btn3_h2'). fadeToggle(1000);
+
+      });
+        // fade toggle
+      $("#btn8").click(function(){
+        $('#btn3_h2'). fadeTo(1000,0.5);
+
+      });
+      // slide
+      $(".top").click(function(){
+        $(".box").slideToggle("slow");
+
+      });
+      // Animation
+      $("#btn9").click(function(){
+        $(".anim_d").animate({left: '200px'});
+      });
+      $("#btn10").click(function(){
+        $("#big_p").animate({fontSize: '3em'}, "slow");
+      });
+
+       $("#flip").click(function(){
+    $("#panel").slideDown(5000);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop();
+  });
+      });
+    </script>
+  
+  </body>
+</html>

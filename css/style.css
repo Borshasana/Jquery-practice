@@ -1,0 +1,73 @@
+
+
+
+.h1_first{
+	display: block;
+	text-align: center;
+	background-color: grey;
+	color: white;
+}
+#p1{
+	display: block;
+	background-color: grey;
+	color: white;
+
+}
+
+#btn3_h2{
+	display: block;
+	background-color: #a4b787;
+	text-align: center;
+	color: white;
+}
+
+.slide_sec{
+
+}
+
+.top{
+padding: 10px 20px;
+text-align: center;
+font-size: 20px;
+background-color: #595b83;
+}
+.box{
+	padding: 10px 20px;
+	text-align: center;
+	font-size: 20px;
+	background-color: #f4abc4;
+}
+
+#btn9{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+#anim_p{
+	background-color: grey;
+	
+	color: white;
+}
+#btn10{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#big_p{
+	background-color: #214252;
+	color: #000;
+}
+
+#panel, #flip {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #214252;
+  color: white;
+  border: solid 1px #666;
+  border-radius: 3px;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
